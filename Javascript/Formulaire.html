@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le formulaire</title>
+    <link rel="stylesheet" href="../css/formulaire.css"/>
+</head>
+<body>
+<div>
+    <form action="inscription" method="POST">
+        <fieldset>
+            <legend>Inscription</legend>
+            <label for="nom">Votre nom:</label> <br/>
+            <input type="text" name="nom" id="nom" maxlength="7" class="taille2"/>
+            <br/>
+
+            <label for="prenom">Votre prénom</label><br/>
+            <input type="text" name="prenom" id="prenom" value="Jack" class="taille2"/>
+            <br/>
+
+            <label>color:</label>
+            <input type="color" name="couleur"/>
+            <br/>
+
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email" placeholder="Saisir une adresse email"/>
+            <br/>
+
+            <label for="cdtion">checkbox:</label>
+            <input type="checkbox" name="cdtion" id="cdtion"/>
+            <br/>
+
+            <label for="telephone">tel:</label>
+            <input type="tel" name="telephone" id="telephone" class="taille2"/>
+            <br/>
+
+            <label for="date_de_naissance">date:</label>
+            <input type="date" name="date_de_naissance" id="date_de_naissance" class="taille2"/>
+            <br/>
+
+            <label for="heure">time:</label>
+            <input type="time" name="heure" id="heure" class="taille2"/>
+            <br/>
+
+            <label for="note">number:</label>
+            <input type="number" name="note" id="note" min="0" max="20" step="2" class="taille2"/>
+            <br/>
+
+            <label for="mot_de_pass">password</label>
+            <input type="password" name="mot_de_pass" id="mot_de_pass" class="taille2"/>
+            <br/>
+
+            <label for="range">Range:</label>
+            <input type="range" name="range" id="range"/>
+            <br/>
+
+            <input type="submit" value="envoyer le formulaire"/>
+            <br/>
+
+            <input type="button" name="btn" value="Coucou"/>
+            <button>Valider</button>
+
+            <br/>
+            <label>Radio:</label><br/>
+            Mme: <input type="radio" name="civilite" checked/><br/>
+            Mr: <input type="radio" name="civilite"><br/>
+
+            <label>Ville</label>
+            <select name="ville">
+                <option value="Lille">Lille</option>
+                <option value="Paris">Paris</option>
+                <option value="Marseille" selected>Marseille</option>
+            </select>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
